@@ -64,8 +64,23 @@
         </div>
       </div>
 
+      <script src="https://stmpjs.com/v3/stmp.js"></script>
+      <script>
+        function sendEmail(){
+          Email.send({
+            Host : "stmp.gmail.com",
+            Username : "cyberpc@abv.bg",
+            Password : "cyberpc123",
+            To : "cyberpc@abv.bg",
+            From : document.getElementById("email").value,
+            Subject : "New Contact from Enquiry",
+            Body : "And this is the body"
+          }).then(message => alert(message));
+        }
+      </script>
+
         <div class="contact-col">
-          <form action="contactform.php" method="post">
+          <form onsubmit="sendEmail(); reset();">
             <input type="text" name="name" placeholder="ИМЕ И ФАМИЛИЯ" required>
             <input type="email" name="email" placeholder="ИМЕЙЛ" required>
             <input type="text" name="subject" placeholder="ТЕМА" required>
