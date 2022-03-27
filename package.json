@@ -1,0 +1,27 @@
+{
+  "name": "cyberpc",
+  "version": "1.0.0",
+  "description": "Tova e saita na Marin Stoyenov i nqma promeni ot HristoNedelkvo",
+  "main": "index.html",
+  "scripts": {
+    "test": "start dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstoyanov7/cyberPC.git"
+  },
+  "keywords": [
+    "Marin",
+    "gei",
+    "Marin"
+  ],
+  "author": "Hristo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mstoyanov7/cyberPC/issues"
+  },
+  "homepage": "https://github.com/mstoyanov7/cyberPC#readme",
+  "dependencies": {
+    "nodemailer": "^6.7.3"
+  }
+}

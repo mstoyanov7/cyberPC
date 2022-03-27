@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="icons/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="icons/css/all.min.css">
     <title>GymBeast</title>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("FvCNwrFx6TOsa5GJC");
+      })();
+    </script>
+      <script src="./js/sendEmail.js" defer></script>
+
   </head>
   <body>
     <section class="sub-header">
@@ -65,12 +74,12 @@
       </div>
 
         <div class="contact-col">
-          <form action="contactform.php" method="post">
+          <form id="form-email">
             <input type="text" name="name" placeholder="ИМЕ И ФАМИЛИЯ" required>
             <input type="email" name="email" placeholder="ИМЕЙЛ" required>
             <input type="text" name="subject" placeholder="ТЕМА" required>
             <textarea rows="8" name="message" placeholder="СЪОБЩЕНИЕ" required></textarea>
-            <button type="submit" class="hero-btn red-btn">ИЗПРАТИ</button>
+            <button id="submit-btn" class="hero-btn red-btn">ИЗПРАТИ</button>
           </form>
         </div>
 
