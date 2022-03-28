@@ -4,6 +4,7 @@
   "description": "Tova e saita na Marin Stoyenov i nqma promeni ot HristoNedelkvo",
   "main": "index.html",
   "scripts": {
+    "start": "lite-server",
     "test": "start dev"
   },
   "repository": {
@@ -23,5 +24,8 @@
   "homepage": "https://github.com/mstoyanov7/cyberPC#readme",
   "dependencies": {
     "nodemailer": "^6.7.3"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }

@@ -14,7 +14,12 @@ btn.addEventListener("click", (e) => {
 });
 
 function sendEmail(tempParams) {
-  emailjs.send( "template_kcvnpp9", tempParams).then((res) => {
-    console.log("success", res.status);
-  });
+  emailjs
+    .send("template_ta257fc", tempParams)
+    .then((res) => {
+      console.log("success", res.status);
+    })
+    .catch((e) => {
+      console.log(e);
+    });
 }
